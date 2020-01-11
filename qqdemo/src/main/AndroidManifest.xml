@@ -37,17 +37,17 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".view.LoginActivity"
+            android:name=".view.activity.LoginActivity"
             android:theme="@style/loginActivity"
             android:launchMode="singleTask"></activity>
         <activity
-            android:name=".view.RegisterActivity"
+            android:name=".view.activity.RegisterActivity"
             android:theme="@style/loginActivity"></activity>
         <activity
-            android:name=".view.BaseActivity"
+            android:name=".view.activity.BaseActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".view.SplashActivity"
+            android:name=".view.activity.SplashActivity"
             android:theme="@style/splashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -80,7 +80,7 @@
         </receiver>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".view.activity.MainActivity"
             android:theme="@style/AppTheme" />
 
         <uses-library

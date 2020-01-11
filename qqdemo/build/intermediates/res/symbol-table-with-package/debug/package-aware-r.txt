@@ -794,6 +794,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -964,8 +965,10 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
+color texthit
 color tooltip_background_dark
 color tooltip_background_light
+color transparent
 color white
 dimen _60dp
 dimen abc_action_bar_content_inset_material
@@ -1421,6 +1424,7 @@ drawable bmob_update_close_bg_normal
 drawable bmob_update_close_bg_tap
 drawable bmob_update_dialog_bg
 drawable bmob_update_wifi_disable
+drawable bottomtint
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1451,6 +1455,9 @@ drawable ic_mtrl_chip_close_circle
 drawable login_btn_normal
 drawable login_btn_pressed
 drawable login_btn_selector
+drawable menuitem
+drawable menuitem_2
+drawable menuitem_3
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1558,6 +1565,7 @@ id bmob_update_id_ignore
 id bmob_update_id_ok
 id bmob_update_wifi_indicator
 id bottom
+id bottomNavigationView
 id btn_login
 id btn_regist
 id buttonPanel
@@ -1617,6 +1625,8 @@ id filled
 id fitToContents
 id fixed
 id forever
+id fragment_viewpager
+id framelayout
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1632,6 +1642,9 @@ id image
 id info
 id invisible
 id italic
+id item_tab1
+id item_tab2
+id item_tab3
 id item_touch_helper_previous_elevation
 id iv_avatar
 id labeled
@@ -1860,6 +1873,7 @@ layout activity_login
 layout activity_main
 layout activity_register
 layout activity_splash
+layout basefragment
 layout bmob_update_dialog
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1928,6 +1942,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu bottom
 mipmap avatar1
 mipmap avatar2
 mipmap avatar3
@@ -1938,9 +1953,11 @@ mipmap avatar7
 mipmap avatar8
 mipmap clear
 mipmap contact_normal
+mipmap contact_normal_3
 mipmap contact_selected
 mipmap contact_selected_2
 mipmap conversation_normal
+mipmap conversation_normal_3
 mipmap conversation_selected
 mipmap conversation_selected_2
 mipmap default_avatar
@@ -1990,6 +2007,7 @@ mipmap nodata
 mipmap ohc
 mipmap onx
 mipmap plugin_normal
+mipmap plugin_normal_3
 mipmap plugin_selected
 mipmap plugin_selected_2
 mipmap receive_msg_normal

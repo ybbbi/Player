@@ -45,17 +45,17 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.ybbbi.qqdemo.view.LoginActivity"
+            android:name="com.ybbbi.qqdemo.view.activity.LoginActivity"
             android:launchMode="singleTask"
             android:theme="@style/loginActivity" />
         <activity
-            android:name="com.ybbbi.qqdemo.view.RegisterActivity"
+            android:name="com.ybbbi.qqdemo.view.activity.RegisterActivity"
             android:theme="@style/loginActivity" />
         <activity
-            android:name="com.ybbbi.qqdemo.view.BaseActivity"
+            android:name="com.ybbbi.qqdemo.view.activity.BaseActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.ybbbi.qqdemo.view.SplashActivity"
+            android:name="com.ybbbi.qqdemo.view.activity.SplashActivity"
             android:theme="@style/splashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -88,7 +88,7 @@
         </receiver>
 
         <activity
-            android:name="com.ybbbi.qqdemo.MainActivity"
+            android:name="com.ybbbi.qqdemo.view.activity.MainActivity"
             android:theme="@style/AppTheme" />
 
         <uses-library

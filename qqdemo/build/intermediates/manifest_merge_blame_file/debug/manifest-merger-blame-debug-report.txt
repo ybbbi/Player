@@ -87,28 +87,28 @@
 45-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:38:9-44
 46        <activity
 46-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:39:9-42:56
-47            android:name="com.ybbbi.qqdemo.view.LoginActivity"
-47-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:40:13-47
+47            android:name="com.ybbbi.qqdemo.view.activity.LoginActivity"
+47-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:40:13-56
 48            android:launchMode="singleTask"
 48-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:42:13-44
 49            android:theme="@style/loginActivity" />
 49-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:41:13-49
 50        <activity
 50-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:43:9-45:61
-51            android:name="com.ybbbi.qqdemo.view.RegisterActivity"
-51-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:44:13-50
+51            android:name="com.ybbbi.qqdemo.view.activity.RegisterActivity"
+51-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:44:13-59
 52            android:theme="@style/loginActivity" />
 52-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:45:13-49
 53        <activity
 53-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:46:9-48:47
-54            android:name="com.ybbbi.qqdemo.view.BaseActivity"
-54-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:47:13-46
+54            android:name="com.ybbbi.qqdemo.view.activity.BaseActivity"
+54-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:47:13-55
 55            android:theme="@style/AppTheme" />
 55-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:48:13-44
 56        <activity
 56-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:49:9-57:20
-57            android:name="com.ybbbi.qqdemo.view.SplashActivity"
-57-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:50:13-48
+57            android:name="com.ybbbi.qqdemo.view.activity.SplashActivity"
+57-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:50:13-57
 58            android:theme="@style/splashTheme" >
 58-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:51:13-47
 59            <intent-filter>
@@ -170,8 +170,8 @@
 88
 89        <activity
 89-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:82:9-84:47
-90            android:name="com.ybbbi.qqdemo.MainActivity"
-90-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:83:13-41
+90            android:name="com.ybbbi.qqdemo.view.activity.MainActivity"
+90-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:83:13-55
 91            android:theme="@style/AppTheme" />
 91-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:84:13-44
 92

@@ -60,32 +60,32 @@
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_abc_cab_background_top_material.xml.flat",
-        "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable/abc_cab_background_top_material.xml"
-    },
-    {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/layout_mtrl_alert_select_dialog_multichoice.xml.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/res/layout/mtrl_alert_select_dialog_multichoice.xml"
+    },
+    {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_abc_cab_background_top_material.xml.flat",
+        "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable/abc_cab_background_top_material.xml"
     },
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/anim_abc_slide_out_top.xml.flat",
-        "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_slide_out_top.xml"
-    },
-    {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/layout_abc_list_menu_item_checkbox.xml.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/anim_abc_slide_out_top.xml.flat",
+        "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_slide_out_top.xml"
     },
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable-v21_abc_edit_text_material.xml.flat",
@@ -126,6 +126,10 @@
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/mipmap-mdpi_nodata.png.flat",
         "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/mipmap-mdpi/nodata.png"
+    },
+    {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_menuitem_2.xml.flat",
+        "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/drawable/menuitem_2.xml"
     },
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view_list_item.xml.flat",
@@ -644,6 +648,10 @@
         "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/mipmap-hdpi/gpi.png"
     },
     {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/mipmap-mdpi_conversation_normal_3.png.flat",
+        "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/mipmap-mdpi/conversation_normal_3.png"
+    },
+    {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/color_mtrl_error.xml.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/res/color/mtrl_error.xml"
     },
@@ -1066,6 +1074,10 @@
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/color_mtrl_chip_ripple_color.xml.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/res/color/mtrl_chip_ripple_color.xml"
+    },
+    {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/mipmap-mdpi_contact_normal_3.png.flat",
+        "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/mipmap-mdpi/contact_normal_3.png"
     },
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
@@ -1576,6 +1588,10 @@
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/res/color/material_on_surface_emphasis_high_type.xml"
     },
     {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_bottomtint.xml.flat",
+        "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/drawable/bottomtint.xml"
+    },
+    {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/anim_abc_slide_out_bottom.xml.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_slide_out_bottom.xml"
     },
@@ -1888,6 +1904,10 @@
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/mipmap-mdpi_plugin_normal_3.png.flat",
+        "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/mipmap-mdpi/plugin_normal_3.png"
+    },
+    {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/mipmap-hdpi_clear.png.flat",
         "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/mipmap-hdpi/clear.png"
     },
@@ -1954,6 +1974,10 @@
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_bmob_update_button_ok_bg_focused.xml.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/ebc6790c17f8ec9195856b88ec0b92f3/bmob-sdk-3.7.3-rc1/res/drawable/bmob_update_button_ok_bg_focused.xml"
+    },
+    {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/layout_basefragment.xml.flat",
+        "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/layout/basefragment.xml"
     },
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_btn_radio_off_to_on_mtrl_animation.xml.flat",
@@ -2500,6 +2524,10 @@
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/res/layout/design_navigation_menu.xml"
     },
     {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_menuitem.xml.flat",
+        "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/drawable/menuitem.xml"
+    },
+    {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_mtrl_popupmenu_background_dark.xml.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/res/drawable/mtrl_popupmenu_background_dark.xml"
     },
@@ -2716,6 +2744,10 @@
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_unchecked_box_inner_merged_animation.xml"
     },
     {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/menu_bottom.xml.flat",
+        "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/menu/bottom.xml"
+    },
+    {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_abc_ic_voice_search_api_material.xml.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable/abc_ic_voice_search_api_material.xml"
     },
@@ -2834,6 +2866,10 @@
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/color_mtrl_navigation_item_icon_tint.xml.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/res/color/mtrl_navigation_item_icon_tint.xml"
+    },
+    {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_menuitem_3.xml.flat",
+        "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/drawable/menuitem_3.xml"
     },
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_btn_radio_on_to_off_mtrl_animation.xml.flat",
