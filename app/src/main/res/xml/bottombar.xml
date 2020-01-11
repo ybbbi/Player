@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        barColorWhenSelected="#fefefe"
+        icon="@drawable/bottom_home_icon"
+        id="@+id/bottombar_home"
+        title="首页" />
+
+    <tab
+        barColorWhenSelected="#fefefe"
+        icon="@drawable/bottom_mv_unselect"
+        id="@+id/bottombar_mv"
+        title="MV" />
+
+    <tab
+        barColorWhenSelected="#fefefe"
+        icon="@drawable/bottom_vbang_unselect"
+        id="@+id/bottombar_vbang"
+        title="V榜" />
+
+    <tab
+        barColorWhenSelected="#fefefe"
+        icon="@drawable/bottom_yuedan_unselect"
+        id="@+id/bottombar_yuedan"
+        title="悦单" />
+
+</tabs>

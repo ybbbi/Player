@@ -1,0 +1,204 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ybbbi.qqdemo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:5:5-66
+11-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:5:22-63
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:6:5-71
+12-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:6:22-68
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:7:5-65
+13-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:7:22-62
+14    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+14-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:8:5-84
+14-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:8:22-81
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:9:5-79
+15-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.GET_TASKS" />
+16-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:10:5-68
+16-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:10:22-65
+17    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+17-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:11:5-76
+17-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:11:22-73
+18    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+18-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:12:5-80
+18-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:12:22-77
+19    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+19-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:13:5-81
+19-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:13:22-78
+20
+21    <!-- 允许联网 -->
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:18:5-67
+22-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:18:22-64
+23    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+24-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:20:5-79
+24-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:20:22-76
+25    <!-- 获取wifi网络状态的信息 -->
+26    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+26-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:22:5-76
+26-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:22:22-73
+27    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+28    <uses-permission android:name="android.permission.WAKE_LOCK" />
+28-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:24:5-68
+28-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:24:22-65
+29    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+30    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+30-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:26:5-81
+30-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:26:22-78
+31    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+32    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+32-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:28:5-75
+32-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:28:22-72
+33
+34    <application
+34-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:30:5-95:19
+35        android:name="com.ybbbi.qqdemo.MyApp"
+35-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:31:9-30
+36        android:allowBackup="true"
+36-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:32:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:24:18-86
+38        android:debuggable="true"
+39        android:icon="@mipmap/ic_launcher"
+39-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:33:9-43
+40        android:label="@string/app_name"
+40-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:34:9-41
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:35:9-54
+42        android:supportsRtl="true"
+42-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:36:9-35
+43        android:testOnly="true"
+44        android:theme="@style/AppTheme"
+44-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:37:9-40
+45        android:usesCleartextTraffic="true" >
+45-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:38:9-44
+46        <activity
+46-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:39:9-42:56
+47            android:name="com.ybbbi.qqdemo.view.LoginActivity"
+47-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:40:13-47
+48            android:launchMode="singleTask"
+48-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:42:13-44
+49            android:theme="@style/loginActivity" />
+49-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:41:13-49
+50        <activity
+50-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:43:9-45:61
+51            android:name="com.ybbbi.qqdemo.view.RegisterActivity"
+51-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:44:13-50
+52            android:theme="@style/loginActivity" />
+52-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:45:13-49
+53        <activity
+53-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:46:9-48:47
+54            android:name="com.ybbbi.qqdemo.view.BaseActivity"
+54-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:47:13-46
+55            android:theme="@style/AppTheme" />
+55-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:48:13-44
+56        <activity
+56-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:49:9-57:20
+57            android:name="com.ybbbi.qqdemo.view.SplashActivity"
+57-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:50:13-48
+58            android:theme="@style/splashTheme" >
+58-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:51:13-47
+59            <intent-filter>
+59-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:52:13-56:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:53:17-69
+60-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:53:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:55:17-77
+62-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:55:27-74
+63            </intent-filter>
+64        </activity>
+65
+66        <meta-data
+66-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:59:9-61:55
+67            android:name="EASEMOB_APPKEY"
+67-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:60:13-42
+68            android:value="1119200107113688#qqdemo" /> <!-- 声明SDK所需的service SDK核心功能 -->
+68-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:61:13-52
+69        <service
+69-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:62:9-64:39
+70            android:name="com.hyphenate.chat.EMChatService"
+70-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:63:13-60
+71            android:exported="true" />
+71-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:64:13-36
+72        <service
+72-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:65:9-68:72
+73            android:name="com.hyphenate.chat.EMJobService"
+73-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:66:13-59
+74            android:exported="true"
+74-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:67:13-36
+75            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- 声明SDK所需的receiver -->
+75-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:68:13-69
+76        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver" >
+76-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:69:9-80:20
+76-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:69:19-70
+77            <intent-filter>
+77-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:70:13-74:29
+78                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+78-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:71:17-80
+78-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:71:25-77
+79
+80                <data android:scheme="package" />
+80-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:73:17-50
+80-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:73:23-47
+81            </intent-filter>
+82            <!-- 可选filter -->
+83            <intent-filter>
+83-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:76:13-79:29
+84                <action android:name="android.intent.action.BOOT_COMPLETED" />
+84-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:77:17-79
+84-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:77:25-76
+85                <action android:name="android.intent.action.USER_PRESENT" />
+85-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:78:17-77
+85-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:78:25-74
+86            </intent-filter>
+87        </receiver>
+88
+89        <activity
+89-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:82:9-84:47
+90            android:name="com.ybbbi.qqdemo.MainActivity"
+90-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:83:13-41
+91            android:theme="@style/AppTheme" />
+91-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:84:13-44
+92
+93        <uses-library
+93-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:86:9-88:40
+94            android:name="org.apache.http.legacy"
+94-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:87:13-50
+95            android:required="false" />
+95-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:88:13-37
+96
+97        <provider
+97-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:89:9-92:20
+98            android:name="cn.bmob.v3.util.BmobContentProvider"
+98-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:90:13-63
+99            android:authorities="com.ybbbi.qqdemo.BmobContentProvider" >
+99-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:91:13-71
+100        </provider>
+101        <provider
+101-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+102            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+102-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+103            android:authorities="com.ybbbi.qqdemo.lifecycle-process"
+103-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+104            android:exported="false"
+104-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+105            android:multiprocess="true" />
+105-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+106    </application>
+107
+108</manifest>
