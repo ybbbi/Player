@@ -16,4 +16,6 @@
     <string name="message">消息</string>
     <string name="dongtai">动态</string>
     <string name="contact">联系人</string>
+    <string name="logout">\t\t\t\t确定要退出当前用户么？</string>
+    <string name="logout_title">退出登录</string>
 </resources>

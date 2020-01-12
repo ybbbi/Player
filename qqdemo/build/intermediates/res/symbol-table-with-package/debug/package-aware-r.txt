@@ -2127,6 +2127,8 @@ string icon_content_description
 string invalid_password
 string invalid_username
 string login_failed
+string logout
+string logout_title
 string message
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
