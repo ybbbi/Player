@@ -169,11 +169,11 @@
 87        </receiver>
 88
 89        <activity
-89-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:82:9-84:47
+89-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:82:9-84:52
 90            android:name="com.ybbbi.qqdemo.view.activity.MainActivity"
 90-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:83:13-55
-91            android:theme="@style/AppTheme" />
-91-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:84:13-44
+91            android:theme="@style/loginActivity" />
+91-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:84:13-49
 92
 93        <uses-library
 93-->/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:86:9-88:40

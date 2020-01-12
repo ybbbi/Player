@@ -68,7 +68,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     @Override
     public void Fail(String s) {
         dismissLoading();
-        Toast.makeText(this, "注册失败，请联系客服人员：XXXX-XXXX", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, s+"\n注册失败，如有问题请联系客服人员：XXXX-XXXX", Toast.LENGTH_LONG).show();
 
     }
 

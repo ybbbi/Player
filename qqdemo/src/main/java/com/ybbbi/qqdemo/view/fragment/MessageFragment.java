@@ -11,8 +11,8 @@ import com.ybbbi.qqdemo.R;
 public class MessageFragment extends BaseFragment {
     @Override
     protected void initView() {
-        TextView view = this.view.findViewById(R.id.text);
-        view.setText("消息");
+        TextView textview = this.view.findViewById(R.id.text);
+        textview.setText(R.string.message);
     }
 
     @Override

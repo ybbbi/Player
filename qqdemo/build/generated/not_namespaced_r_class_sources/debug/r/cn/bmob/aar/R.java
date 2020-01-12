@@ -36,13 +36,13 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int bmob_update_content = 0x7f080047;
-        public static final int bmob_update_id_cancel = 0x7f080048;
-        public static final int bmob_update_id_check = 0x7f080049;
-        public static final int bmob_update_id_close = 0x7f08004a;
-        public static final int bmob_update_id_ignore = 0x7f08004b;
-        public static final int bmob_update_id_ok = 0x7f08004c;
-        public static final int bmob_update_wifi_indicator = 0x7f08004d;
+        public static final int bmob_update_content = 0x7f080049;
+        public static final int bmob_update_id_cancel = 0x7f08004a;
+        public static final int bmob_update_id_check = 0x7f08004b;
+        public static final int bmob_update_id_close = 0x7f08004c;
+        public static final int bmob_update_id_ignore = 0x7f08004d;
+        public static final int bmob_update_id_ok = 0x7f08004e;
+        public static final int bmob_update_wifi_indicator = 0x7f08004f;
     }
     public static final class layout {
         private layout() {}
@@ -66,19 +66,19 @@ public final class R {
         public static final int BMUpdateNow = 0x7f0f000b;
         public static final int BMUpdateSize = 0x7f0f000c;
         public static final int BMUpdateTitle = 0x7f0f000d;
-        public static final int bmob_common_action_cancel = 0x7f0f002d;
-        public static final int bmob_common_action_continue = 0x7f0f002e;
-        public static final int bmob_common_action_info_exist = 0x7f0f002f;
-        public static final int bmob_common_action_pause = 0x7f0f0030;
-        public static final int bmob_common_download_failed = 0x7f0f0031;
-        public static final int bmob_common_download_finish = 0x7f0f0032;
-        public static final int bmob_common_download_notification_prefix = 0x7f0f0033;
-        public static final int bmob_common_info_interrupt = 0x7f0f0034;
-        public static final int bmob_common_network_break_alert = 0x7f0f0035;
-        public static final int bmob_common_patch_finish = 0x7f0f0036;
-        public static final int bmob_common_pause_notification_prefix = 0x7f0f0037;
-        public static final int bmob_common_silent_download_finish = 0x7f0f0038;
-        public static final int bmob_common_start_download_notification = 0x7f0f0039;
-        public static final int bmob_common_start_patch_notification = 0x7f0f003a;
+        public static final int bmob_common_action_cancel = 0x7f0f002f;
+        public static final int bmob_common_action_continue = 0x7f0f0030;
+        public static final int bmob_common_action_info_exist = 0x7f0f0031;
+        public static final int bmob_common_action_pause = 0x7f0f0032;
+        public static final int bmob_common_download_failed = 0x7f0f0033;
+        public static final int bmob_common_download_finish = 0x7f0f0034;
+        public static final int bmob_common_download_notification_prefix = 0x7f0f0035;
+        public static final int bmob_common_info_interrupt = 0x7f0f0036;
+        public static final int bmob_common_network_break_alert = 0x7f0f0037;
+        public static final int bmob_common_patch_finish = 0x7f0f0038;
+        public static final int bmob_common_pause_notification_prefix = 0x7f0f0039;
+        public static final int bmob_common_silent_download_finish = 0x7f0f003a;
+        public static final int bmob_common_start_download_notification = 0x7f0f003b;
+        public static final int bmob_common_start_patch_notification = 0x7f0f003c;
     }
 }

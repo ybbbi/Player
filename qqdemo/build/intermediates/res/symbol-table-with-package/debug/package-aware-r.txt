@@ -1307,6 +1307,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen slide_text_size
 dimen test_mtrl_calendar_day_cornerSize
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
@@ -1439,6 +1440,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ease_show_head_toast_bg
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
@@ -1455,6 +1457,9 @@ drawable ic_mtrl_chip_close_circle
 drawable login_btn_normal
 drawable login_btn_pressed
 drawable login_btn_selector
+drawable logout_btn_normal
+drawable logout_btn_pressed
+drawable logout_btn_selector
 drawable menuitem
 drawable menuitem_2
 drawable menuitem_3
@@ -1496,6 +1501,7 @@ id SHIFT
 id SYM
 id TOP_END
 id TOP_START
+id about
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -1549,6 +1555,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addfriends
 id alertTitle
 id all
 id always
@@ -1567,6 +1574,7 @@ id bmob_update_wifi_indicator
 id bottom
 id bottomNavigationView
 id btn_login
+id btn_logout
 id btn_regist
 id buttonPanel
 id cancel_button
@@ -1587,6 +1595,9 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id contact_id
+id contact_img
+id contact_list
 id container
 id content
 id contentPanel
@@ -1626,7 +1637,6 @@ id fitToContents
 id fixed
 id forever
 id fragment_viewpager
-id framelayout
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1708,6 +1718,7 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id recyclerview
 id right
 id right_icon
 id right_side
@@ -1715,6 +1726,7 @@ id rounded
 id save_non_transition_alpha
 id save_overlay_view
 id scale
+id scan
 id screen
 id scroll
 id scrollIndicatorDown
@@ -1731,6 +1743,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id section
 id select_dialog_listview
 id selected
 id shortcut
@@ -1739,6 +1752,7 @@ id showHome
 id showTitle
 id skipCollapsed
 id slide
+id slidebar
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1776,6 +1790,7 @@ id textSpacerNoTitle
 id textStart
 id text_input_end_icon
 id text_input_start_icon
+id text_title
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -1789,6 +1804,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1797,12 +1813,14 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_float
 id tv_newuser
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
+id user
 id view_offset_helper
 id visible
 id withText
@@ -1875,6 +1893,9 @@ layout activity_register
 layout activity_splash
 layout basefragment
 layout bmob_update_dialog
+layout contact
+layout contact_item
+layout contact_layout
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1891,6 +1912,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dongtai_fragment
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -1943,6 +1965,10 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu bottom
+menu menu_main
+mipmap about
+mipmap add_friend_pres
+mipmap add_friend_pressed
 mipmap avatar1
 mipmap avatar2
 mipmap avatar3
@@ -1962,7 +1988,6 @@ mipmap conversation_selected
 mipmap conversation_selected_2
 mipmap default_avatar
 mipmap delete
-mipmap ease_show_head_toast_bg
 mipmap fdy
 mipmap gpf
 mipmap gpg
@@ -2065,8 +2090,10 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string about
 string action_sign_in
 string action_sign_in_short
+string addfriends
 string app_name
 string appbar_scrolling_view_behavior
 string bmob_common_action_cancel
@@ -2089,6 +2116,8 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string contact
+string dongtai
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2098,6 +2127,7 @@ string icon_content_description
 string invalid_password
 string invalid_username
 string login_failed
+string message
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -2139,6 +2169,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string prompt_email
 string prompt_password
+string scan
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_login

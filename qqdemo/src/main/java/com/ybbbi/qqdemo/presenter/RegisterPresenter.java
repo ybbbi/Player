@@ -36,22 +36,22 @@ public class RegisterPresenter implements RegisterIPresenter {
                         try {
                             EMClient.getInstance().createAccount(username, pwd);
                             //环信成功，在主线程更新
-                            ThreadUtils.runOnMainThread(() -> {
-                                view.Success(s,username,pwd);
+                            ThreadUtils.runOnMainThread(() ->
+                                view.Success(s,username,pwd)
 
-                            });
+                            );
                         } catch (HyphenateException he) {
-                            ThreadUtils.runOnMainThread(() -> {
+                            ThreadUtils.runOnMainThread(() ->
                                 user.delete(new UpdateListener() {
                                     @Override
                                     public void done(BmobException e) {
 
-                                        view.Fail("注册失败，请联系客服人员");
+                                        view.Fail("用户名已经注册");
                                     }
-                                });
+                                })
 
 
-                            });
+                            );
                             he.printStackTrace();
                         }
 

@@ -1,21 +1,23 @@
 package com.ybbbi.qqdemo.view.activity;
 
 import android.os.Bundle;
-import android.util.SparseArray;
+import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.view.menu.MenuBuilder;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.ybbbi.qqdemo.R;
-import com.ybbbi.qqdemo.view.activity.BaseActivity;
+import com.ybbbi.qqdemo.Utils.ToastUtils;
 import com.ybbbi.qqdemo.view.adapter.FragmentViewpagerAdapter;
-import com.ybbbi.qqdemo.view.fragment.BaseFragment;
 import com.ybbbi.qqdemo.view.fragment.ContactFragment;
 import com.ybbbi.qqdemo.view.fragment.DongTaiFragment;
 import com.ybbbi.qqdemo.view.fragment.MessageFragment;
@@ -28,28 +30,70 @@ public class MainActivity extends BaseActivity {
     private BottomNavigationView bottomNavigationView;
     private ViewPager fragment_viewpager;
     private List<Fragment> list;
+    private Toolbar toolbar;
+    private TextView title;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
         setSwipeBackEnable(false);
-        initactionbar();
         initfragment();
         init();
+        initactionbar();
 
 
     }
 
     private void initactionbar() {
-        setStatusBarColor(this,R.color.colorPrimary);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("");
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
+        setStatusBarColor(this, R.color.colorPrimary);
     }
+
+    /**
+     * 菜单栏创建
+     */
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        MenuBuilder builder= (MenuBuilder) menu;
+
+        builder.setOptionalIconsVisible(true);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.addfriends:
+                ToastUtils.ShowMsg(getString(R.string.addfriends),this);
+                break;
+            case R.id.about:
+                ToastUtils.ShowMsg(getString(R.string.about),this);
+                break;
+            case R.id.scan:
+                ToastUtils.ShowMsg(getString(R.string.scan),this);
+                break;
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * 菜单栏的点击事件
+     */
+
 
     private void initfragment() {
         MessageFragment baseFragment1 = new MessageFragment();
         ContactFragment baseFragment2 = new ContactFragment();
         DongTaiFragment baseFragment3 = new DongTaiFragment();
-        list=new ArrayList();
+        list = new ArrayList();
         list.add(baseFragment1);
         list.add(baseFragment2);
         list.add(baseFragment3);
@@ -58,6 +102,10 @@ public class MainActivity extends BaseActivity {
     }
 
     private void init() {
+
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        title = (TextView) findViewById(R.id.text_title);
 
         fragment_viewpager = (ViewPager) findViewById(R.id.fragment_viewpager);
         fragment_viewpager.setAdapter(new FragmentViewpagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT, list));
@@ -74,7 +122,10 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public void onPageSelected(int position) {
+
                 bottomNavigationView.getMenu().getItem(position).setChecked(true);
+                switchFragment(bottomNavigationView.getMenu().getItem(position).getItemId());
+
             }
 
             @Override
@@ -82,14 +133,13 @@ public class MainActivity extends BaseActivity {
 
             }
         });
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        bottomNavigationView.setOnNavigationItemSelectedListener((MenuItem item)-> {
+
 
                 switchFragment(item.getItemId());
 
                 return true;
-            }
+
         });
     }
 
@@ -100,11 +150,14 @@ public class MainActivity extends BaseActivity {
         switch (id) {
             case R.id.item_tab1:
                 fragment_viewpager.setCurrentItem(0);
+                title.setText(R.string.message);
                 break;
             case R.id.item_tab2:
+                title.setText(R.string.contact);
                 fragment_viewpager.setCurrentItem(1);
                 break;
             case R.id.item_tab3:
+                title.setText(R.string.dongtai);
                 fragment_viewpager.setCurrentItem(2);
                 break;
         }

@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">QQdemo</string>
     <string name="title_activity_login">登录</string>
+    <string name="addfriends">添加好友</string>
+    <string name="scan">扫一扫</string>
+    <string name="about">关于</string>
+
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
@@ -9,4 +13,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="message">消息</string>
+    <string name="dongtai">动态</string>
+    <string name="contact">联系人</string>
 </resources>

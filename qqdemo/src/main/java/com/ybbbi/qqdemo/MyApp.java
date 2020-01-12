@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
+import com.ybbbi.qqdemo.Utils.DbUtils;
 
 import java.util.Iterator;
 import java.util.List;
@@ -41,6 +42,9 @@ public class MyApp extends Application {
         //在做打包混淆时，关闭debug模式，避免消耗不必要的资源
         EMClient.getInstance().setDebugMode(true);
 
+
+        //初始化联系人数据库
+        DbUtils.init(this);
 
         Bmob.initialize(this, "cce1f5bb833d3e3c62cc1d2de397e070");
     }

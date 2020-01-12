@@ -111,4 +111,9 @@ public class BaseActivity extends SwipeBackActivity {
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        dismissLoading();
+        super.onDestroy();
+    }
 }
