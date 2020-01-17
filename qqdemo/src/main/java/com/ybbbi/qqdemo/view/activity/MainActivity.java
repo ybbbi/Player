@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -32,6 +31,7 @@ public class MainActivity extends BaseActivity {
     private List<Fragment> list;
     private Toolbar toolbar;
     private TextView title;
+    private long currentTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,23 +61,23 @@ public class MainActivity extends BaseActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        MenuBuilder builder= (MenuBuilder) menu;
+        MenuBuilder builder = (MenuBuilder) menu;
 
         builder.setOptionalIconsVisible(true);
-        return super.onCreateOptionsMenu(menu);
+        return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.addfriends:
-                ToastUtils.ShowMsg(getString(R.string.addfriends),this);
+                ToastUtils.ShowMsg(getString(R.string.addfriends), this);
                 break;
             case R.id.about:
-                ToastUtils.ShowMsg(getString(R.string.about),this);
+                ToastUtils.ShowMsg(getString(R.string.about), this);
                 break;
             case R.id.scan:
-                ToastUtils.ShowMsg(getString(R.string.scan),this);
+                ToastUtils.ShowMsg(getString(R.string.scan), this);
                 break;
 
         }
@@ -133,12 +133,12 @@ public class MainActivity extends BaseActivity {
 
             }
         });
-        bottomNavigationView.setOnNavigationItemSelectedListener((MenuItem item)-> {
+        bottomNavigationView.setOnNavigationItemSelectedListener((MenuItem item) -> {
 
 
-                switchFragment(item.getItemId());
+            switchFragment(item.getItemId());
 
-                return true;
+            return true;
 
         });
     }
@@ -161,5 +161,22 @@ public class MainActivity extends BaseActivity {
                 fragment_viewpager.setCurrentItem(2);
                 break;
         }
+    }
+
+    long last = 0;
+
+    @Override
+    public void onBackPressed() {
+        ToastUtils.ShowMsg("再次点击返回键退出应用程序", this);
+        currentTime = System.currentTimeMillis();
+
+        if (currentTime - last > 2000) {
+            last = System.currentTimeMillis();
+            return;
+        } else {
+            finish();
+        }
+
+        super.onBackPressed();
     }
 }

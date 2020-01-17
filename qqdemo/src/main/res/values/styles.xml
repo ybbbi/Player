@@ -16,6 +16,10 @@
         <item name="windowActionBar">false</item>
 
     </style>
+    <style name="popupwindow" parent="Widget.AppCompat.Light.PopupMenu">
+        <item name="overlapAnchor">false</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
 
     <style name="splashTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- 隐藏状态栏 -->
