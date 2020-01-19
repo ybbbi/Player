@@ -5,6 +5,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 
@@ -20,10 +22,10 @@ import com.ybbbi.qqdemo.R;
  * ybbbi
  * 2020-01-19 19:27
  */
-public class AddFriends extends BaseActivity {
+public class AddFriends extends BaseActivity implements View.OnClickListener {
 
     private Toolbar toolbar;
-    private TextView title;
+    private ImageButton back;
     private RecyclerView recyclerview;
     private SearchView searchView;
 
@@ -37,7 +39,8 @@ public class AddFriends extends BaseActivity {
 
     private void init() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        title = (TextView) findViewById(R.id.text_title);
+        back = (ImageButton) findViewById(R.id.back);
+        back.setOnClickListener(this);
         recyclerview = (RecyclerView) findViewById(R.id.recyclerview);
         inittoolbar();
 
@@ -50,13 +53,11 @@ public class AddFriends extends BaseActivity {
         getMenuInflater().inflate(R.menu.add_friends, menu);
         MenuItem item = menu.findItem(R.id.search_menu);
         searchView = (SearchView) item.getActionView();
-
         searchView.setQueryHint("搜索好友");
-        searchView.setOnSearchClickListener(view -> title.setText(""));
-        searchView.setOnCloseListener(() -> {
-            title.setText(R.string.search);
-            return false;
-        });
+        searchView.setIconifiedByDefault(false);
+        searchView.setBackgroundResource(R.drawable.search);
+
+        searchView.setFocusable(false);
 
         return super.onCreateOptionsMenu(menu);
     }
@@ -66,17 +67,12 @@ public class AddFriends extends BaseActivity {
         ActionBar actionBar = getSupportActionBar();
 
         actionBar.setTitle("");
-        actionBar.setHomeButtonEnabled(true);
-        actionBar.setDisplayHomeAsUpEnabled(true);
+
     }
 
+
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                break;
-        }
-        return super.onOptionsItemSelected(item);
+    public void onClick(View view) {
+        finish();
     }
 }

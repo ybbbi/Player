@@ -1456,6 +1456,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable left_back_normal
+drawable left_back_pres
 drawable list_item_selector
 drawable login_btn_normal
 drawable login_btn_pressed
@@ -1488,6 +1490,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable search
+drawable searchback_btn_selector
 drawable shadow_bottom
 drawable shadow_left
 drawable shadow_right
@@ -1565,6 +1569,7 @@ id all
 id always
 id async
 id auto
+id back
 id barrier
 id beginning
 id blocking
@@ -2016,8 +2021,6 @@ mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap lao
-mipmap left_back_normal
-mipmap left_back_pres
 mipmap llt
 mipmap loading
 mipmap loading1
@@ -2872,6 +2875,7 @@ style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
 style myAnimationStyle
 style popupwindow
+style searchtoolbar
 style splashTheme
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
