@@ -1,21 +1,28 @@
 package com.ybbbi.qqdemo.view.activity;
 
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.view.menu.MenuBuilder;
 import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.ybbbi.qqdemo.R;
+import com.ybbbi.qqdemo.Utils.MeasureUtils;
 import com.ybbbi.qqdemo.Utils.ToastUtils;
 import com.ybbbi.qqdemo.view.adapter.FragmentViewpagerAdapter;
 import com.ybbbi.qqdemo.view.fragment.ContactFragment;
@@ -33,6 +40,8 @@ public class MainActivity extends BaseActivity {
     private Toolbar toolbar;
     private TextView title;
     private long currentTime;
+    private DrawerLayout drawerlayout;
+    private LinearLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +60,11 @@ public class MainActivity extends BaseActivity {
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("");
+        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerlayout, toolbar, 0, 0);
         actionBar.setDisplayHomeAsUpEnabled(true);
-
+        actionBar.setHomeButtonEnabled(true);
+        actionBarDrawerToggle.syncState();
+        drawerlayout.addDrawerListener(actionBarDrawerToggle);
         setStatusBarColor(this, R.color.colorPrimary);
     }
 
@@ -73,7 +85,7 @@ public class MainActivity extends BaseActivity {
         switch (item.getItemId()) {
             case R.id.addfriends:
 //                ToastUtils.ShowMsg(getString(R.string.addfriends), this);
-                startActivity(new Intent(this,AddFriends.class));
+                startActivity(new Intent(this, AddFriends.class));
                 break;
             case R.id.about:
                 ToastUtils.ShowMsg(getString(R.string.about), this);
@@ -105,6 +117,8 @@ public class MainActivity extends BaseActivity {
 
     private void init() {
 
+
+        initDrawer();
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         title = (TextView) findViewById(R.id.text_title);
@@ -143,6 +157,14 @@ public class MainActivity extends BaseActivity {
             return true;
 
         });
+    }
+
+    private void initDrawer() {
+        drawerlayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        drawer = (LinearLayout) findViewById(R.id.drawer);
+        Point point = MeasureUtils.init(this).getScreenWH();
+        drawer.getLayoutParams().width = point.x/4*3;
+        drawer.setLayoutParams(drawer.getLayoutParams());
     }
 
     /**

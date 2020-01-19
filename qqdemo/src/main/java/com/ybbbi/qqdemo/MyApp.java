@@ -50,7 +50,9 @@ public class MyApp extends Application {
         //初始化联系人数据库
         DbUtils.init(this);
 
+
         Bmob.initialize(this, "cce1f5bb833d3e3c62cc1d2de397e070");
+        //当好友列表发生更改时
         EMClient.getInstance().contactManager().setContactListener(new EMContactListener() {
             @Override
             public void onContactAdded(String s) {
