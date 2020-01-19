@@ -1,2 +1,2 @@
-include ':app', ':demo', ':qqdemo'
+include ':app', ':demo', ':qqdemo', ':weibo'
 
