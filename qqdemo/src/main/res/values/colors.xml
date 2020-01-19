@@ -9,4 +9,6 @@
     <color name="btn_pressed">#00A1BB</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="texthit">#AFB1B3</color>
+    <color name="texthit_light">#55AFB1B3</color>
+    <color name="gray">#55595959</color>
 </resources>

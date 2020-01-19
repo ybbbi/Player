@@ -11,12 +11,13 @@
 
 
     </style>
-    <style name="loginActivity" parent="AppTheme">
+    <style name="NoActionBar" parent="AppTheme">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
 
     </style>
-    <style name="popupwindow" parent="Widget.AppCompat.Light.PopupMenu">
+    <style name="popupwindow" parent="Base.ThemeOverlay.AppCompat.Light">
+
         <item name="overlapAnchor">false</item>
         <item name="android:paddingRight">10dp</item>
     </style>

@@ -6,4 +6,6 @@ package com.ybbbi.qqdemo.presenter.Interface;
  */
 public interface ContactIPresenter {
     void initContact();
+    void updateContact();
+    void delete(String name);
 }

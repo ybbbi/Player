@@ -4,9 +4,13 @@ import android.app.ActivityManager;
 import android.app.Application;
 import android.content.pm.PackageManager;
 
+import com.hyphenate.EMContactListener;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
 import com.ybbbi.qqdemo.Utils.DbUtils;
+import com.ybbbi.qqdemo.event.MessageEvent;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.Iterator;
 import java.util.List;
@@ -47,6 +51,35 @@ public class MyApp extends Application {
         DbUtils.init(this);
 
         Bmob.initialize(this, "cce1f5bb833d3e3c62cc1d2de397e070");
+        EMClient.getInstance().contactManager().setContactListener(new EMContactListener() {
+            @Override
+            public void onContactAdded(String s) {
+                //添加成功，发送消息
+
+                EventBus.getDefault().post(new MessageEvent(s,true));
+            }
+
+            @Override
+            public void onContactDeleted(String s) {
+                //拒绝添加，发送消息
+                EventBus.getDefault().post(new MessageEvent(s,false));
+
+            }
+
+            @Override
+            public void onContactInvited(String s, String s1) {
+
+            }
+
+            @Override
+            public void onFriendRequestAccepted(String s) {
+            }
+
+            @Override
+            public void onFriendRequestDeclined(String s) {
+
+            }
+        });
     }
 
     /**

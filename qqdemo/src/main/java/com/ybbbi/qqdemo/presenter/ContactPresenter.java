@@ -33,6 +33,38 @@ public class ContactPresenter implements ContactIPresenter {
         updateData();
     }
 
+    @Override
+    public void updateContact() {
+        updateData();
+    }
+
+    @Override
+    public void delete(String contactName) {
+        ThreadUtils.runOnChildThread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    EMClient.getInstance().contactManager().deleteContact(contactName);
+                    ThreadUtils.runOnMainThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            view.onDelete(true,"删除成功");
+                        }
+                    });
+                } catch (HyphenateException e) {
+                    ThreadUtils.runOnMainThread(new Runnable() {
+                        @Override
+                        public void run() {
+                        view.onDelete(false,"删除失败"+e.toString());
+                        }
+                    });
+                    e.printStackTrace();
+                }
+            }
+        });
+
+    }
+
     private void updateData() {
         ThreadUtils.runOnChildThread(() -> {
             try {
@@ -44,6 +76,7 @@ public class ContactPresenter implements ContactIPresenter {
                         return s.compareTo(t1);
                     }
                 });
+                DbUtils.updateContacts(EMClient.getInstance().getCurrentUser(),server_contact);
                 ThreadUtils.runOnMainThread(() ->
                     view.onUpdate(true, server_contact, "")
                 );

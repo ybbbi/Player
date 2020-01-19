@@ -9,15 +9,20 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.ybbbi.qqdemo.R;
 import com.ybbbi.qqdemo.Utils.StringUtils;
 import com.ybbbi.qqdemo.Utils.ToastUtils;
+import com.ybbbi.qqdemo.event.MessageEvent;
 import com.ybbbi.qqdemo.presenter.ContactPresenter;
 import com.ybbbi.qqdemo.view.Interface.ContactIView;
 import com.ybbbi.qqdemo.widget.ContactLayout;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.List;
-import java.util.zip.Inflater;
 
 /**
  * ybbbi
@@ -37,9 +42,13 @@ public class ContactFragment extends BaseFragment implements ContactIView {
 
     }
 
-    private class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+    public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         private List<String> contacts;
+
+        public List<String> getContacts() {
+            return contacts;
+        }
 
         public void setContacts(List<String> contacts) {
             this.contacts = contacts;
@@ -83,8 +92,33 @@ public class ContactFragment extends BaseFragment implements ContactIView {
 
                 }*/
 
-
             }
+            //条目内容点击事件
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //聊天界面
+                    ToastUtils.ShowMsg("与" + contacts.get(position) + "的聊天", getContext());
+
+                }
+            });
+            holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+//                        删除对话框
+                    Snackbar.make(view, "确定要删除" + contacts.get(position) + "吗？", 5000).setAction("确定", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+//                                ToastUtils.ShowMsg("已删除"+contacts.get(position),getContext());
+                            contactPresenter.delete(contacts.get(position));
+                        }
+                    }).show();
+                    return true;
+                }
+            });
+
+
+            //根据索引设置头像
             switch (index) {
                 case 1:
                     holder.id_img.setImageResource(R.mipmap.avatar1);
@@ -114,7 +148,7 @@ public class ContactFragment extends BaseFragment implements ContactIView {
 
         }
 
-        private class MyViewHolder extends RecyclerView.ViewHolder {
+        class MyViewHolder extends RecyclerView.ViewHolder {
 
             private TextView id;
             private TextView section;
@@ -150,4 +184,36 @@ public class ContactFragment extends BaseFragment implements ContactIView {
             ToastUtils.ShowMsg("更新失败", getContext());
         }
     }
+
+    @Override
+    public void onDelete(boolean isSuccess, String s) {
+        if(isSuccess){
+            ToastUtils.ShowMsg("删除成功",getContext());
+        }else{
+            ToastUtils.ShowMsg("删除失败",getContext());
+
+        }
+    }
+    //eventbus 传递事件
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void getContactChange(MessageEvent event) {
+
+
+        contactPresenter.updateContact();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        EventBus.getDefault().register(this);
+
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        EventBus.getDefault().unregister(this);
+    }
+
+
 }

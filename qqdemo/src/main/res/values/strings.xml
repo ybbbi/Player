@@ -14,6 +14,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="message">消息</string>
+    <string name="search">搜索</string>
     <string name="dongtai">动态</string>
     <string name="contact">联系人</string>
     <string name="logout">\t\t\t\t确定要退出当前用户么？</string>

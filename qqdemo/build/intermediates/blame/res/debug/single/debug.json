@@ -680,6 +680,10 @@
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/color/abc_background_cache_hint_selector_material_light.xml"
     },
     {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/menu_add_friends.xml.flat",
+        "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/menu/add_friends.xml"
+    },
+    {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/animator_mtrl_chip_state_list_anim.xml.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/res/animator/mtrl_chip_state_list_anim.xml"
     },
@@ -1482,6 +1486,10 @@
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_bmob_update_button_close_bg_selector.xml.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/ebc6790c17f8ec9195856b88ec0b92f3/bmob-sdk-3.7.3-rc1/res/drawable/bmob_update_button_close_bg_selector.xml"
+    },
+    {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/drawable_list_item_selector.xml.flat",
+        "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/drawable/list_item_selector.xml"
     },
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/layout_design_layout_tab_text.xml.flat",
@@ -2454,6 +2462,10 @@
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/color_mtrl_tabs_icon_color_selector.xml.flat",
         "source": "/Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/res/color/mtrl_tabs_icon_color_selector.xml"
+    },
+    {
+        "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/layout_activity_addfriend.xml.flat",
+        "source": "/Users/zhangyanbo/Desktop/Player/qqdemo/src/main/res/layout/activity_addfriend.xml"
     },
     {
         "merged": "/Users/zhangyanbo/Desktop/Player/qqdemo/build/intermediates/res/merged/debug/mipmap-mdpi_unread_all.png.flat",

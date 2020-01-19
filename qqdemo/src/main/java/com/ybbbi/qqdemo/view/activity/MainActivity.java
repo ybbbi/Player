@@ -1,5 +1,6 @@
 package com.ybbbi.qqdemo.view.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -71,7 +72,8 @@ public class MainActivity extends BaseActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.addfriends:
-                ToastUtils.ShowMsg(getString(R.string.addfriends), this);
+//                ToastUtils.ShowMsg(getString(R.string.addfriends), this);
+                startActivity(new Intent(this,AddFriends.class));
                 break;
             case R.id.about:
                 ToastUtils.ShowMsg(getString(R.string.about), this);

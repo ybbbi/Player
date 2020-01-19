@@ -63,12 +63,14 @@ public class DbUtils {
             database.beginTransaction();
             try {
                 //删除旧的数据
-                database.execSQL("delete from contact_info where username=" + username);
+                database.delete("contact_info","username=?",new String[]{username});
+//                database.execSQL("delete from contact_info where username=" + username);
                 //添加新的数据
 
                 for (String contact : contacts) {
                     //将传递的数据更新
-                    database.execSQL("insert into contact_info (contact)values (" +contact +")");
+//                    database.insert("contact_info","contact",contact );
+                    database.execSQL("insert into contact_info ( username,contact ) values ( '"+username+"'"+",'"+contact+"')");
                 }
 
                 database.setTransactionSuccessful();
