@@ -1,5 +1,6 @@
 package com.ybbbi.qqdemo.view.fragment;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import com.ybbbi.qqdemo.Utils.ToastUtils;
 import com.ybbbi.qqdemo.event.MessageEvent;
 import com.ybbbi.qqdemo.presenter.ContactPresenter;
 import com.ybbbi.qqdemo.view.Interface.ContactIView;
+import com.ybbbi.qqdemo.view.activity.ChatActivity;
 import com.ybbbi.qqdemo.widget.ContactLayout;
 
 import org.greenrobot.eventbus.EventBus;
@@ -98,7 +100,9 @@ public class ContactFragment extends BaseFragment implements ContactIView {
                 @Override
                 public void onClick(View view) {
                     //聊天界面
-                    ToastUtils.ShowMsg("与" + contacts.get(position) + "的聊天", getContext());
+                    Intent intent = new Intent(getActivity(), ChatActivity.class);
+                    intent.putExtra("contact",text);
+                    startActivity(intent);
 
                 }
             });

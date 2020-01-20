@@ -1475,6 +1475,7 @@ drawable logout_btn_selector
 drawable menuitem
 drawable menuitem_2
 drawable menuitem_3
+drawable message
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1568,6 +1569,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id activity_main
 id add
 id addfriends
 id addfriends_recyclerview
@@ -1592,6 +1594,7 @@ id bottomNavigationView
 id btn_login
 id btn_logout
 id btn_regist
+id btn_send
 id buttonPanel
 id cancel_button
 id center
@@ -1642,6 +1645,7 @@ id end
 id enterAlways
 id enterAlwaysCollapsed
 id et_confirmpwd
+id et_message
 id et_pwd
 id et_username
 id exitUntilCollapsed
@@ -1745,6 +1749,7 @@ id right
 id right_icon
 id right_side
 id rounded
+id rv_chat
 id save_non_transition_alpha
 id save_overlay_view
 id scale
@@ -1803,6 +1808,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id tb_toolbar
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id text
@@ -1838,6 +1844,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id tv_float
 id tv_newuser
+id tv_title
 id unchecked
 id uniform
 id unlabeled
@@ -1911,6 +1918,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_addfriend
 layout activity_base
+layout activity_chat
 layout activity_login
 layout activity_main
 layout activity_register
@@ -2200,6 +2208,7 @@ string prompt_password
 string scan
 string search
 string search_menu_title
+string send
 string status_bar_notification_info_overflow
 string sure
 string title_activity_login
