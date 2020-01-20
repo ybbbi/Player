@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import com.hyphenate.EMContactListener;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
+import com.hyphenate.exceptions.HyphenateException;
 import com.ybbbi.qqdemo.Utils.DbUtils;
 import com.ybbbi.qqdemo.event.MessageEvent;
 
@@ -70,11 +71,19 @@ public class MyApp extends Application {
 
             @Override
             public void onContactInvited(String s, String s1) {
-
+                //邀请信息,默认全加
+                try {
+                    EMClient.getInstance().contactManager().acceptInvitation(s);
+                } catch (HyphenateException e) {
+                    e.printStackTrace();
+                }
             }
 
             @Override
             public void onFriendRequestAccepted(String s) {
+                //会有一个第三方bug，在对方未同意的情况下  回调了同意函数
+                //EventBus.getDefault().post(new MessageEvent(s,true));
+
             }
 
             @Override

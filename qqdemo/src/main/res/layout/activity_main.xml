@@ -28,68 +28,75 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.drawerlayout.widget.DrawerLayout
-        android:layout_width="match_parent"
         android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/fragment_viewpager"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:orientation="vertical">
 
 
-        </androidx.viewpager.widget.ViewPager>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/fragment_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView"
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:itemIconTint="@drawable/bottomtint"
+                app:labelVisibilityMode="labeled"
+
+
+                app:menu="@menu/bottom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/drawer"
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            app:itemIconTint="@drawable/bottomtint"
-            app:labelVisibilityMode="labeled"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@mipmap/onx"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
 
 
-            app:menu="@menu/bottom" />
-    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="个人中心"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
 
-    <LinearLayout
-        android:id="@+id/drawer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="left"
-        android:paddingLeft="10dp"
-        android:background="@color/white"
-        android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="我的收藏"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="个人中心"
-            android:textSize="25sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="我的收藏"
-            android:textSize="25sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="意见反馈"
-            android:textSize="25sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="意见反馈"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
 
 
-    </LinearLayout>
+        </LinearLayout>
     </androidx.drawerlayout.widget.DrawerLayout>
 </LinearLayout>
 

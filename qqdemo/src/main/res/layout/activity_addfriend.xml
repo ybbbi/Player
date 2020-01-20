@@ -49,8 +49,12 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:src="@mipmap/nodata"
+            android:id="@+id/nodata_img"
 
             />
+
+
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/addfriends_recyclerview"

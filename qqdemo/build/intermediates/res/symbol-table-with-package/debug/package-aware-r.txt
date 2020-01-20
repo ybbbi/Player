@@ -196,6 +196,10 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr chipSurfaceColor
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -860,6 +864,7 @@ color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
 color gray
+color gunsmoke
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
@@ -1405,6 +1410,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable addfriend_btn_normal
+drawable addfriend_btn_pressed
 drawable avd_hide_password
 drawable avd_show_password
 drawable bmob_update_btn_check_off_focused_holo_light
@@ -1599,6 +1606,7 @@ id chip2
 id chip3
 id chip_group
 id chronometer
+id cir_img
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -1707,9 +1715,11 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
+id name
 id navigation_header_container
 id never
 id noScroll
+id nodata_img
 id none
 id normal
 id notification_background
@@ -1927,6 +1937,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dongtai_fragment
+layout list_item_addf
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2106,6 +2117,7 @@ string abc_toolbar_collapse_description
 string about
 string action_sign_in
 string action_sign_in_short
+string add
 string addfriends
 string app_name
 string appbar_scrolling_view_behavior
@@ -2139,6 +2151,7 @@ string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string invalid_password
 string invalid_username
+string isfriends
 string login_failed
 string logout
 string logout_title
@@ -2188,6 +2201,7 @@ string scan
 string search
 string search_menu_title
 string status_bar_notification_info_overflow
+string sure
 string title_activity_login
 string welcome
 style AlertDialog_AppCompat
@@ -2905,6 +2919,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

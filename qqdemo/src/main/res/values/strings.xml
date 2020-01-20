@@ -19,4 +19,8 @@
     <string name="contact">联系人</string>
     <string name="logout">\t\t\t\t确定要退出当前用户么？</string>
     <string name="logout_title">退出登录</string>
+    <string name="add">添 加</string>
+    <string name="isfriends">已添加</string>
+    <string name="sure">确定</string>
+
 </resources>
