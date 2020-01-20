@@ -11,8 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ffbaea2-21ed-4f1b-aaa0-9c22d032c7dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weibo/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+            <state relative-caret-position="48">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -94,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weibo/weibo.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            <state relative-caret-position="80">
+              <caret line="5" column="60" lean-forward="true" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -139,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/qqdemo/src/main/java/com/ybbbi/qqdemo/view/activity/RegisterActivity.java" />
         <option value="$PROJECT_DIR$/qqdemo/src/main/res/layout/activity_base.xml" />
         <option value="$PROJECT_DIR$/qqdemo/src/main/res/layout/contact.xml" />
         <option value="$PROJECT_DIR$/qqdemo/src/main/java/com/ybbbi/qqdemo/view/fragment/DongTaiFragment.java" />
@@ -190,6 +188,7 @@
         <option value="$PROJECT_DIR$/app/.gitignore" />
         <option value="$PROJECT_DIR$/demo/.gitignore" />
         <option value="$PROJECT_DIR$/weibo/.gitignore" />
+        <option value="$PROJECT_DIR$/weibo/weibo.iml" />
       </list>
     </option>
   </component>
@@ -676,15 +675,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo/weibo.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state relative-caret-position="80">
+          <caret line="5" column="60" lean-forward="true" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        <state relative-caret-position="48">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
