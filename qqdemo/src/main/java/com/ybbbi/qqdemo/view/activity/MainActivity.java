@@ -22,6 +22,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.ybbbi.qqdemo.R;
+import com.ybbbi.qqdemo.Utils.ActivityManager;
 import com.ybbbi.qqdemo.Utils.MeasureUtils;
 import com.ybbbi.qqdemo.Utils.ToastUtils;
 import com.ybbbi.qqdemo.view.adapter.FragmentViewpagerAdapter;
@@ -47,6 +48,8 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        ActivityManager.getInstance().getList().add(this);
+
         setContentView(R.layout.activity_main);
         setSwipeBackEnable(false);
         initfragment();
@@ -54,6 +57,12 @@ public class MainActivity extends BaseActivity {
         initactionbar();
 
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        ActivityManager.getInstance().getList().remove(this);
+        super.onDestroy();
     }
 
     private void initactionbar() {
@@ -190,7 +199,7 @@ public class MainActivity extends BaseActivity {
     long last = 0;
 
     @Override
-    public void onBackPressed() {
+    public void onBackPressedSupport() {
         ToastUtils.ShowMsg("再次点击返回键退出应用程序", this);
         currentTime = System.currentTimeMillis();
 

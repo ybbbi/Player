@@ -1,13 +1,14 @@
 package com.ybbbi.qqdemo.view.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.graphics.Point;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -16,20 +17,96 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
 import com.ybbbi.qqdemo.R;
+import com.ybbbi.qqdemo.Utils.ActivityManager;
+import com.ybbbi.qqdemo.Utils.MeasureUtils;
+import com.ybbbi.qqdemo.Utils.ToastUtils;
 
-import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Stack;
+
+import me.yokeyword.fragmentation.SwipeBackLayout;
+import me.yokeyword.fragmentation_swipeback.SwipeBackActivity;
 
 public class BaseActivity extends SwipeBackActivity {
 
     private ProgressDialog progressDialog;
 
+private View decorView;
+    private Point point;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_base);
+        /*point = MeasureUtils.init(BaseActivity.this).getScreenWH();
+
+        getSwipeBackLayout().addSwipeListener(new SwipeBackLayout.OnSwipeListener() {
+
+
+            private int prex;
+
+            @Override
+            public void onDragStateChange(int state) {
+                Log.e("ybbbi", "onDragStateChange: " + state);
+                switch (state) {
+                    //0为返回最初点，不退出； 1为按下； 2为抬起； 3为画到最右侧，结束；
+                    case 2:
+                        //获取抬手位置
+                        if (prex < (point.x / 3.789)) {
+                            ValueAnimator animatorin = ValueAnimator.ofInt(prex, 0);
+                            animatorin.addUpdateListener(valueAnimator -> {
+                                int value = (int) valueAnimator.getAnimatedValue();
+                                decorView.scrollTo(value,0);
+
+                            });
+
+                            animatorin.setDuration(200);
+                            animatorin.start();
+                        } else {
+                            //回到最左边
+                            ValueAnimator animatorout = ValueAnimator.ofInt(prex, -point.x);
+                            animatorout.addUpdateListener(valueAnimator -> {
+                                int value = (int) valueAnimator.getAnimatedValue();
+                                decorView.scrollTo(value,0);
+
+                            });
+
+                            animatorout.setDuration(200);
+                            animatorout.start();
+
+                        }
+                        break;
+                }
+            }
+
+            @Override
+            public void onEdgeTouch(int oritentationEdgeFlag) {
+
+            }
+
+            @Override
+            public void onDragScrolled(float scrollPercent) {
+                Log.e("ybbbi", "scrollPercent: " + scrollPercent);
+
+
+
+                LinkedList<Activity> list = ActivityManager.getInstance().getList();
+                prex = (int) ((1 - scrollPercent) / 2 * point.x);
+                Log.e("ybbbi", "prex: " + prex);
+
+                decorView = list.get(list.size() - 2).getWindow().getDecorView();
+               decorView .scrollTo(prex, 0);
+
+            }
+        });
+*/
 
 
     }
+
 
     protected void setStatusBarColor(Activity activity, int colorId) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

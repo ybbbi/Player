@@ -1,13 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-91:12
-INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-91:12
-INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-91:12
-INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-91:12
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-92:12
+INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-92:12
+INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-92:12
+INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-92:12
 MERGED from [de.hdodenhof:circleimageview:3.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/1ba3c5e74ca2bd199f19a5f8e5a6b48f/circleimageview-3.0.2/AndroidManifest.xml:2:1-11:12
 MERGED from [cn.bmob.android:bmob-sdk:3.7.3-rc1] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/ebc6790c17f8ec9195856b88ec0b92f3/bmob-sdk-3.7.3-rc1/AndroidManifest.xml:2:1-16:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/875a3df80a78edacc2bfcb8ec05b3a79/rxandroid-2.1.0/AndroidManifest.xml:15:1-20:12
-MERGED from [me.imid.swipebacklayout.lib:library:1.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/fe73a32ecd6263662ca53bc84dd96e1c/jetified-library-1.1.0/AndroidManifest.xml:2:1-15:12
 MERGED from [com.google.android.material:material:1.2.0-alpha03] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/508ac768b50158a079142e4dc4915061/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
@@ -38,21 +37,24 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/zhangyanbo/.grad
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/534dfe358287b68b5ba1038d10b7afc0/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/69ba81d17fd1c26c75281615add0554c/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/699bc310780b1730bce8fe271ffeca8b/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [me.yokeyword:fragmentationx-swipeback:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/f5d5b4f9538621ae11d6861e2f5869ae/jetified-fragmentationx-swipeback-1.0.2/AndroidManifest.xml:2:1-11:12
+MERGED from [me.yokeyword:fragmentationx:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/62223f68bf147f070a1bb14464e2067b/fragmentationx-1.0.2/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/5e50ab5578b972fcfb4b2c061e3acb13/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-91:12
-INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-91:12
-INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-91:12
+MERGED from [me.yokeyword:fragmentationx-core:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/16f22e0530087d9c9df1aba983dd51c4/jetified-fragmentationx-core-1.0.2/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-92:12
+INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-92:12
+INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-92:12
 	package
 		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:3:5-31
 		INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml
 		INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-91:12
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-92:12
 		INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-91:12
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:1-92:12
 		INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:2:11-69
@@ -117,13 +119,11 @@ ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:
 	android:name
 		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:19:22-72
 application
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:21:5-89:19
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:21:5-90:19
 MERGED from [de.hdodenhof:circleimageview:3.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/1ba3c5e74ca2bd199f19a5f8e5a6b48f/circleimageview-3.0.2/AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:3.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/1ba3c5e74ca2bd199f19a5f8e5a6b48f/circleimageview-3.0.2/AndroidManifest.xml:9:5-20
 MERGED from [cn.bmob.android:bmob-sdk:3.7.3-rc1] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/ebc6790c17f8ec9195856b88ec0b92f3/bmob-sdk-3.7.3-rc1/AndroidManifest.xml:11:5-14:19
 MERGED from [cn.bmob.android:bmob-sdk:3.7.3-rc1] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/ebc6790c17f8ec9195856b88ec0b92f3/bmob-sdk-3.7.3-rc1/AndroidManifest.xml:11:5-14:19
-MERGED from [me.imid.swipebacklayout.lib:library:1.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/fe73a32ecd6263662ca53bc84dd96e1c/jetified-library-1.1.0/AndroidManifest.xml:13:5-20
-MERGED from [me.imid.swipebacklayout.lib:library:1.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/fe73a32ecd6263662ca53bc84dd96e1c/jetified-library-1.1.0/AndroidManifest.xml:13:5-20
 MERGED from [com.google.android.material:material:1.2.0-alpha03] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.0-alpha03] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/508ac768b50158a079142e4dc4915061/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -136,6 +136,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/zhan
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/f3128affa7000c088d176285d7f5681f/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:22:5-28:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:22:5-28:19
+MERGED from [me.yokeyword:fragmentationx-swipeback:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/f5d5b4f9538621ae11d6861e2f5869ae/jetified-fragmentationx-swipeback-1.0.2/AndroidManifest.xml:9:5-20
+MERGED from [me.yokeyword:fragmentationx-swipeback:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/f5d5b4f9538621ae11d6861e2f5869ae/jetified-fragmentationx-swipeback-1.0.2/AndroidManifest.xml:9:5-20
+MERGED from [me.yokeyword:fragmentationx:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/62223f68bf147f070a1bb14464e2067b/fragmentationx-1.0.2/AndroidManifest.xml:9:5-20
+MERGED from [me.yokeyword:fragmentationx:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/62223f68bf147f070a1bb14464e2067b/fragmentationx-1.0.2/AndroidManifest.xml:9:5-20
+MERGED from [me.yokeyword:fragmentationx-core:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/16f22e0530087d9c9df1aba983dd51c4/jetified-fragmentationx-core-1.0.2/AndroidManifest.xml:9:5-20
+MERGED from [me.yokeyword:fragmentationx-core:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/16f22e0530087d9c9df1aba983dd51c4/jetified-fragmentationx-core-1.0.2/AndroidManifest.xml:9:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
@@ -155,115 +161,117 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/zhangyanbo/.grad
 	android:name
 		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:22:9-30
 activity#com.ybbbi.qqdemo.view.activity.ChatActivity
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:30:9-31:59
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:30:9-32:59
+	android:windowSoftInputMode
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:31:13-52
 	android:theme
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:31:13-47
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:32:13-47
 	android:name
 		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:30:19-61
 activity#com.ybbbi.qqdemo.view.activity.LoginActivity
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:32:9-35:50
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:33:9-36:50
 	android:launchMode
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:34:13-44
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:35:13-44
 	android:theme
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:35:13-47
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:36:13-47
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:33:13-56
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:34:13-56
 activity#com.ybbbi.qqdemo.view.activity.RegisterActivity
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:36:9-38:50
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:37:9-39:50
 	android:theme
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:38:13-47
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:39:13-47
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:37:13-59
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:38:13-59
 activity#com.ybbbi.qqdemo.view.activity.BaseActivity
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:39:9-41:47
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:40:9-42:47
 	android:theme
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:41:13-44
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:42:13-44
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:40:13-55
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:41:13-55
 activity#com.ybbbi.qqdemo.view.activity.AddFriends
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:42:9-44:50
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:43:9-45:50
 	android:theme
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:44:13-47
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:45:13-47
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:43:13-53
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:44:13-53
 activity#com.ybbbi.qqdemo.view.activity.SplashActivity
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:45:9-53:20
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:46:9-54:20
 	android:theme
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:47:13-47
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:48:13-47
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:46:13-57
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:47:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:48:13-52:29
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:49:13-53:29
 action#android.intent.action.MAIN
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:49:17-69
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:50:17-69
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:49:25-66
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:50:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:51:17-77
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:52:17-77
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:51:27-74
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:52:27-74
 meta-data#EASEMOB_APPKEY
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:55:9-57:55
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:56:9-58:55
 	android:value
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:57:13-52
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:58:13-52
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:56:13-42
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:57:13-42
 service#com.hyphenate.chat.EMChatService
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:58:9-60:39
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:59:9-61:39
 	android:exported
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:60:13-36
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:61:13-36
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:59:13-60
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:60:13-60
 service#com.hyphenate.chat.EMJobService
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:61:9-64:72
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:62:9-65:72
 	android:exported
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:63:13-36
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:64:13-36
 	android:permission
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:64:13-69
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:65:13-69
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:62:13-59
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:63:13-59
 receiver#com.hyphenate.chat.EMMonitorReceiver
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:65:9-76:20
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:66:9-77:20
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:65:19-70
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:66:19-70
 intent-filter#action:name:android.intent.action.PACKAGE_REMOVED+data:scheme:package
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:66:13-70:29
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:67:13-71:29
 action#android.intent.action.PACKAGE_REMOVED
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:67:17-80
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:68:17-80
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:67:25-77
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:68:25-77
 data
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:69:17-50
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:70:17-50
 	android:scheme
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:69:23-47
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:70:23-47
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.USER_PRESENT
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:72:13-75:29
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:73:13-76:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:73:17-79
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:74:17-79
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:73:25-76
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:74:25-76
 action#android.intent.action.USER_PRESENT
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:74:17-77
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:75:17-77
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:74:25-74
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:75:25-74
 activity#com.ybbbi.qqdemo.view.activity.MainActivity
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:78:9-80:50
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:79:9-81:50
 	android:theme
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:80:13-47
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:81:13-47
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:79:13-55
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:80:13-55
 uses-library#org.apache.http.legacy
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:82:9-84:40
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:83:9-85:40
 	android:required
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:84:13-37
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:85:13-37
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:83:13-50
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:84:13-50
 provider#cn.bmob.v3.util.BmobContentProvider
-ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:86:9-88:83
+ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:87:9-89:83
 	android:authorities
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:88:13-71
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:89:13-71
 	android:name
-		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:87:13-63
+		ADDED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml:88:13-63
 uses-sdk
 INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml
@@ -274,8 +282,6 @@ MERGED from [cn.bmob.android:bmob-sdk:3.7.3-rc1] /Users/zhangyanbo/.gradle/cache
 MERGED from [cn.bmob.android:bmob-sdk:3.7.3-rc1] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/ebc6790c17f8ec9195856b88ec0b92f3/bmob-sdk-3.7.3-rc1/AndroidManifest.xml:7:5-9:41
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/875a3df80a78edacc2bfcb8ec05b3a79/rxandroid-2.1.0/AndroidManifest.xml:18:5-43
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/875a3df80a78edacc2bfcb8ec05b3a79/rxandroid-2.1.0/AndroidManifest.xml:18:5-43
-MERGED from [me.imid.swipebacklayout.lib:library:1.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/fe73a32ecd6263662ca53bc84dd96e1c/jetified-library-1.1.0/AndroidManifest.xml:9:5-11:41
-MERGED from [me.imid.swipebacklayout.lib:library:1.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/fe73a32ecd6263662ca53bc84dd96e1c/jetified-library-1.1.0/AndroidManifest.xml:9:5-11:41
 MERGED from [com.google.android.material:material:1.2.0-alpha03] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.2.0-alpha03] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/cba1f2e431402bcc44fc733c2c041f34/material-1.2.0-alpha03/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -336,8 +342,14 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/zhangyanbo/.gradle/cac
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/69ba81d17fd1c26c75281615add0554c/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/699bc310780b1730bce8fe271ffeca8b/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/699bc310780b1730bce8fe271ffeca8b/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [me.yokeyword:fragmentationx-swipeback:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/f5d5b4f9538621ae11d6861e2f5869ae/jetified-fragmentationx-swipeback-1.0.2/AndroidManifest.xml:5:5-7:41
+MERGED from [me.yokeyword:fragmentationx-swipeback:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/f5d5b4f9538621ae11d6861e2f5869ae/jetified-fragmentationx-swipeback-1.0.2/AndroidManifest.xml:5:5-7:41
+MERGED from [me.yokeyword:fragmentationx:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/62223f68bf147f070a1bb14464e2067b/fragmentationx-1.0.2/AndroidManifest.xml:5:5-7:41
+MERGED from [me.yokeyword:fragmentationx:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/62223f68bf147f070a1bb14464e2067b/fragmentationx-1.0.2/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/5e50ab5578b972fcfb4b2c061e3acb13/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/5e50ab5578b972fcfb4b2c061e3acb13/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [me.yokeyword:fragmentationx-core:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/16f22e0530087d9c9df1aba983dd51c4/jetified-fragmentationx-core-1.0.2/AndroidManifest.xml:5:5-7:41
+MERGED from [me.yokeyword:fragmentationx-core:1.0.2] /Users/zhangyanbo/.gradle/caches/transforms-2/files-2.1/16f22e0530087d9c9df1aba983dd51c4/jetified-fragmentationx-core-1.0.2/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml
 INJECTED from /Users/zhangyanbo/Desktop/Player/qqdemo/src/main/AndroidManifest.xml
 	android:targetSdkVersion

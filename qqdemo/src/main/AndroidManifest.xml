@@ -28,6 +28,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".view.activity.ChatActivity"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/NoActionBar"></activity>
         <activity
             android:name=".view.activity.LoginActivity"

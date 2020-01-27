@@ -39,7 +39,8 @@
         android:usesCleartextTraffic="true" >
         <activity
             android:name="com.ybbbi.qqdemo.view.activity.ChatActivity"
-            android:theme="@style/NoActionBar" />
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.ybbbi.qqdemo.view.activity.LoginActivity"
             android:launchMode="singleTask"

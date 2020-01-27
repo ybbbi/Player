@@ -11,4 +11,6 @@ import java.util.List;
 public interface ChatIPresenter {
 //    void sendMessage(String user,String msg);
     List<EMMessage> getMessageFromUser(String user);
+
+    void sendMessage(String message, String contact);
 }

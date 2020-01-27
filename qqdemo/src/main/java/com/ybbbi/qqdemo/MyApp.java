@@ -5,7 +5,9 @@ import android.app.Application;
 import android.content.pm.PackageManager;
 
 import com.hyphenate.EMContactListener;
+import com.hyphenate.EMMessageListener;
 import com.hyphenate.chat.EMClient;
+import com.hyphenate.chat.EMMessage;
 import com.hyphenate.chat.EMOptions;
 import com.hyphenate.exceptions.HyphenateException;
 import com.ybbbi.qqdemo.Utils.DbUtils;
@@ -23,6 +25,7 @@ public class MyApp extends Application {
     public void onCreate() {
 
         super.onCreate();
+
         EMOptions options = new EMOptions();
         // 默认添加好友时，是不需要验证的，改成需要验证
         options.setAcceptInvitationAlways(false);
@@ -47,6 +50,7 @@ public class MyApp extends Application {
         //在做打包混淆时，关闭debug模式，避免消耗不必要的资源
         EMClient.getInstance().setDebugMode(true);
 
+        initgetMsg();
 
         //初始化联系人数据库
         DbUtils.init(this);
@@ -88,6 +92,40 @@ public class MyApp extends Application {
 
             @Override
             public void onFriendRequestDeclined(String s) {
+
+            }
+        });
+    }
+
+    private void initgetMsg() {
+        EMClient.getInstance().chatManager().addMessageListener(new EMMessageListener() {
+            @Override
+            public void onMessageReceived(List<EMMessage> list) {
+                EventBus.getDefault().post(list);
+            }
+
+            @Override
+            public void onCmdMessageReceived(List<EMMessage> list) {
+
+            }
+
+            @Override
+            public void onMessageRead(List<EMMessage> list) {
+
+            }
+
+            @Override
+            public void onMessageDelivered(List<EMMessage> list) {
+
+            }
+
+            @Override
+            public void onMessageRecalled(List<EMMessage> list) {
+
+            }
+
+            @Override
+            public void onMessageChanged(EMMessage emMessage, Object o) {
 
             }
         });
