@@ -1530,6 +1530,7 @@ drawable shadow_right
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable unread
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1675,6 +1676,7 @@ id et_username
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab
 id fade
 id fill
 id fill_horizontal
@@ -1874,12 +1876,14 @@ id tv_message
 id tv_newuser
 id tv_time
 id tv_title
+id tv_unread
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
 id user
+id username
 id view_offset_helper
 id visible
 id withText
@@ -1957,6 +1961,7 @@ layout bmob_update_dialog
 layout contact
 layout contact_item
 layout contact_layout
+layout conversation
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1977,6 +1982,7 @@ layout dongtai_fragment
 layout list_chat_item
 layout list_chat_send_item
 layout list_item_addf
+layout list_item_conversation
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

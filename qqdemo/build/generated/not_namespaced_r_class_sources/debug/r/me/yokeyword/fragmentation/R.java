@@ -34,8 +34,8 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int hierarchy = 0x7f0800a1;
-        public static final int isexpand = 0x7f0800aa;
+        public static final int hierarchy = 0x7f0800a2;
+        public static final int isexpand = 0x7f0800ab;
     }
     public static final class string {
         private string() {}
