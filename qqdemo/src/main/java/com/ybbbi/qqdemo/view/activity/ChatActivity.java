@@ -155,7 +155,7 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener, 
         chatAdapter.setMessages(emMessages);
         chatAdapter.notifyDataSetChanged();
         if(chatAdapter.getItemCount()>0){
-            recyclerview.smoothScrollToPosition(chatAdapter.getItemCount()-1);
+            recyclerview.scrollToPosition(chatAdapter.getItemCount()-1);
         }
     }
 
@@ -163,7 +163,7 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener, 
     public void updateList() {
         chatAdapter.notifyDataSetChanged();
         if(chatAdapter.getItemCount()>0){
-            recyclerview.smoothScrollToPosition(chatAdapter.getItemCount()-1);
+            recyclerview.scrollToPosition(chatAdapter.getItemCount()-1);
         }
     }
 }

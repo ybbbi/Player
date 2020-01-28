@@ -1,8 +1,10 @@
 package com.ybbbi.qqdemo.view.activity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Point;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,7 +22,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.badge.BadgeDrawable;
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.hyphenate.chat.EMClient;
+import com.hyphenate.chat.EMMessage;
 import com.ybbbi.qqdemo.R;
 import com.ybbbi.qqdemo.Utils.ActivityManager;
 import com.ybbbi.qqdemo.Utils.MeasureUtils;
@@ -29,6 +36,10 @@ import com.ybbbi.qqdemo.view.adapter.FragmentViewpagerAdapter;
 import com.ybbbi.qqdemo.view.fragment.ContactFragment;
 import com.ybbbi.qqdemo.view.fragment.DongTaiFragment;
 import com.ybbbi.qqdemo.view.fragment.MessageFragment;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +54,10 @@ public class MainActivity extends BaseActivity {
     private long currentTime;
     private DrawerLayout drawerlayout;
     private LinearLayout drawer;
+    private BottomNavigationItemView child;
+    private BottomNavigationMenuView menuView;
+    private View view;
+    private TextView tv_unread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +69,7 @@ public class MainActivity extends BaseActivity {
         setSwipeBackEnable(false);
         initfragment();
         init();
+
         initactionbar();
 
 
@@ -66,6 +82,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private void initactionbar() {
+
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("");
@@ -95,6 +112,7 @@ public class MainActivity extends BaseActivity {
             case R.id.addfriends:
 //                ToastUtils.ShowMsg(getString(R.string.addfriends), this);
                 startActivity(new Intent(this, AddFriends.class));
+
                 break;
             case R.id.about:
                 ToastUtils.ShowMsg(getString(R.string.about), this);
@@ -124,6 +142,7 @@ public class MainActivity extends BaseActivity {
 
     }
 
+    @SuppressLint("RestrictedApi")
     private void init() {
 
 
@@ -138,6 +157,12 @@ public class MainActivity extends BaseActivity {
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
         //使用自己选中图片的背景
         bottomNavigationView.setItemIconTintList(null);
+        //初始化角标控件
+        initUpdateUnreadView();
+
+        updateBadgeDrawable();
+
+
         //将viewpager与bottomnavigationview绑定
         fragment_viewpager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -168,11 +193,60 @@ public class MainActivity extends BaseActivity {
         });
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        EventBus.getDefault().register(this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        updateBadgeDrawable();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        EventBus.getDefault().unregister(this);
+
+    }
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onGetMessage(List<EMMessage> list){
+        updateBadgeDrawable();
+    }
+
+
+    //更新图标数量
+    public void updateBadgeDrawable() {
+
+
+        int unreadMessageCount = EMClient.getInstance().chatManager().getUnreadMessageCount();
+        if (unreadMessageCount == 0) {
+            tv_unread.setVisibility(View.GONE);
+        } else if (unreadMessageCount > 99) {
+            tv_unread.setVisibility(View.VISIBLE);
+            tv_unread.setText(String.valueOf(99));
+        }else{
+            tv_unread.setVisibility(View.VISIBLE);
+            tv_unread.setText(String.valueOf(unreadMessageCount));
+        }
+    }
+
+    private void initUpdateUnreadView() {
+        menuView = (BottomNavigationMenuView) bottomNavigationView.getChildAt(0);
+        child = (BottomNavigationItemView) menuView.getChildAt(0);
+        view = LayoutInflater.from(this).inflate(R.layout.updatebadge, child, false);
+        child.addView(view);
+        tv_unread = child.findViewById(R.id.tv_unread);
+    }
+
     private void initDrawer() {
         drawerlayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         drawer = (LinearLayout) findViewById(R.id.drawer);
         Point point = MeasureUtils.init(this).getScreenWH();
-        drawer.getLayoutParams().width = point.x/4*3;
+        drawer.getLayoutParams().width = point.x / 4 * 3;
         drawer.setLayoutParams(drawer.getLayoutParams());
     }
 

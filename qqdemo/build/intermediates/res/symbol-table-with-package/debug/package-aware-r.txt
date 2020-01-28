@@ -981,7 +981,14 @@ color tooltip_background_dark
 color tooltip_background_light
 color transparent
 color white
+dimen _10dp
+dimen _15dp
+dimen _18dp
+dimen _20dp
+dimen _3dp
+dimen _5dp
 dimen _60dp
+dimen _6dp
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -2033,6 +2040,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout updatebadge
 menu add_friends
 menu bottom
 menu menu_main

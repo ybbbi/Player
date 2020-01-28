@@ -46,34 +46,34 @@ public final class R {
     public static final class dimen {
         private dimen() {}
 
-        public static final int compat_button_inset_horizontal_material = 0x7f060056;
-        public static final int compat_button_inset_vertical_material = 0x7f060057;
-        public static final int compat_button_padding_horizontal_material = 0x7f060058;
-        public static final int compat_button_padding_vertical_material = 0x7f060059;
-        public static final int compat_control_corner_material = 0x7f06005a;
-        public static final int compat_notification_large_icon_max_height = 0x7f06005b;
-        public static final int compat_notification_large_icon_max_width = 0x7f06005c;
-        public static final int fastscroll_default_thickness = 0x7f06008e;
-        public static final int fastscroll_margin = 0x7f06008f;
-        public static final int fastscroll_minimum_range = 0x7f060090;
-        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f060098;
-        public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f060099;
-        public static final int item_touch_helper_swipe_escape_velocity = 0x7f06009a;
-        public static final int notification_action_icon_size = 0x7f060142;
-        public static final int notification_action_text_size = 0x7f060143;
-        public static final int notification_big_circle_margin = 0x7f060144;
-        public static final int notification_content_margin_start = 0x7f060145;
-        public static final int notification_large_icon_height = 0x7f060146;
-        public static final int notification_large_icon_width = 0x7f060147;
-        public static final int notification_main_column_padding_top = 0x7f060148;
-        public static final int notification_media_narrow_margin = 0x7f060149;
-        public static final int notification_right_icon_size = 0x7f06014a;
-        public static final int notification_right_side_padding_top = 0x7f06014b;
-        public static final int notification_small_icon_background_padding = 0x7f06014c;
-        public static final int notification_small_icon_size_as_large = 0x7f06014d;
-        public static final int notification_subtext_size = 0x7f06014e;
-        public static final int notification_top_pad = 0x7f06014f;
-        public static final int notification_top_pad_large_text = 0x7f060150;
+        public static final int compat_button_inset_horizontal_material = 0x7f06005d;
+        public static final int compat_button_inset_vertical_material = 0x7f06005e;
+        public static final int compat_button_padding_horizontal_material = 0x7f06005f;
+        public static final int compat_button_padding_vertical_material = 0x7f060060;
+        public static final int compat_control_corner_material = 0x7f060061;
+        public static final int compat_notification_large_icon_max_height = 0x7f060062;
+        public static final int compat_notification_large_icon_max_width = 0x7f060063;
+        public static final int fastscroll_default_thickness = 0x7f060095;
+        public static final int fastscroll_margin = 0x7f060096;
+        public static final int fastscroll_minimum_range = 0x7f060097;
+        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f06009f;
+        public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f0600a0;
+        public static final int item_touch_helper_swipe_escape_velocity = 0x7f0600a1;
+        public static final int notification_action_icon_size = 0x7f060149;
+        public static final int notification_action_text_size = 0x7f06014a;
+        public static final int notification_big_circle_margin = 0x7f06014b;
+        public static final int notification_content_margin_start = 0x7f06014c;
+        public static final int notification_large_icon_height = 0x7f06014d;
+        public static final int notification_large_icon_width = 0x7f06014e;
+        public static final int notification_main_column_padding_top = 0x7f06014f;
+        public static final int notification_media_narrow_margin = 0x7f060150;
+        public static final int notification_right_icon_size = 0x7f060151;
+        public static final int notification_right_side_padding_top = 0x7f060152;
+        public static final int notification_small_icon_background_padding = 0x7f060153;
+        public static final int notification_small_icon_size_as_large = 0x7f060154;
+        public static final int notification_subtext_size = 0x7f060155;
+        public static final int notification_top_pad = 0x7f060156;
+        public static final int notification_top_pad_large_text = 0x7f060157;
     }
     public static final class drawable {
         private drawable() {}

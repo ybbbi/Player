@@ -11,4 +11,6 @@ import java.util.List;
 public interface ConversatrionIView {
 
     void getConversations(List<EMConversation> list);
+
+    void onClear();
 }

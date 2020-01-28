@@ -6,4 +6,6 @@ package com.ybbbi.qqdemo.presenter.Interface;
  */
 public interface ConversatioinIPresenter {
     void getConversations();
+
+    void clear();
 }

@@ -66,7 +66,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewholder> 
                 holder.tv_time.setVisibility(View.VISIBLE);
             }
         } else {
-            if (DateUtils.isCloseEnough(msgTime, messages.get(position).getMsgTime())) {
+            if (DateUtils.isCloseEnough(msgTime, messages.get(position-1).getMsgTime())) {
                 holder.tv_time.setVisibility(View.GONE);
             } else {
                 holder.tv_time.setText(DateUtils.getTimestampString(new Date(msgTime)));

@@ -1,7 +1,8 @@
-package com.ybbbi.qqdemo.presenter.Interface;
+package com.ybbbi.qqdemo.presenter;
 
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMConversation;
+import com.ybbbi.qqdemo.presenter.Interface.ConversatioinIPresenter;
 import com.ybbbi.qqdemo.view.Interface.ConversatrionIView;
 
 import java.util.ArrayList;
@@ -29,9 +30,15 @@ public class ConversationPresenter implements ConversatioinIPresenter {
         List<EMConversation> list=new ArrayList<>(values);
         // 返回值为int类型，大于0表示正序，小于0表示逆序
         Collections.sort(list, (EMConversation t, EMConversation t1)->
-                 (int) (t.getLastMessage().getMsgTime()-t1.getLastMessage().getMsgTime())
+                 (int) (t1.getLastMessage().getMsgTime()-t.getLastMessage().getMsgTime())
 
         );
         view.getConversations(list);
+    }
+
+    @Override
+    public void clear() {
+        EMClient.getInstance().chatManager().markAllConversationsAsRead();
+        view.onClear();
     }
 }

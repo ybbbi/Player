@@ -2,18 +2,20 @@ package com.ybbbi.qqdemo.view.fragment;
 
 import android.content.Intent;
 import android.view.View;
-import android.widget.TextView;
 
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMConversation;
 import com.hyphenate.chat.EMMessage;
 import com.ybbbi.qqdemo.R;
-import com.ybbbi.qqdemo.presenter.Interface.ConversationPresenter;
+import com.ybbbi.qqdemo.presenter.ConversationPresenter;
 import com.ybbbi.qqdemo.view.Interface.ConversatrionIView;
 import com.ybbbi.qqdemo.view.activity.ChatActivity;
+import com.ybbbi.qqdemo.view.activity.MainActivity;
 import com.ybbbi.qqdemo.view.adapter.ConversationAdapter;
 
 import org.greenrobot.eventbus.EventBus;
@@ -26,7 +28,7 @@ import java.util.List;
  * ybbbi
  * 2020-01-11 23:03
  */
-public class MessageFragment extends BaseFragment implements ConversatrionIView {
+public class MessageFragment extends BaseFragment implements ConversatrionIView, View.OnClickListener {
 
     private RecyclerView recyclerview;
     private FloatingActionButton fab;
@@ -37,6 +39,7 @@ public class MessageFragment extends BaseFragment implements ConversatrionIView 
     protected void initView() {
         recyclerview = view.findViewById(R.id.recyclerview);
         fab = view.findViewById(R.id.fab);
+        fab.setOnClickListener(this);
         adapter = new ConversationAdapter(null);
         recyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerview.setAdapter(adapter);
@@ -61,6 +64,11 @@ public class MessageFragment extends BaseFragment implements ConversatrionIView 
     }
 
     @Override
+    public void onClear() {
+        presenter.getConversations();
+    }
+
+    @Override
     public void onStart() {
         super.onStart();
         EventBus.getDefault().register(this);
@@ -80,5 +88,13 @@ public class MessageFragment extends BaseFragment implements ConversatrionIView 
     public void onResume() {
         super.onResume();
         presenter.getConversations();
+    }
+
+    @Override
+    public void onClick(View view) {
+        presenter.clear();
+        MainActivity activity = (MainActivity) getActivity();
+        activity.updateBadgeDrawable();
+
     }
 }
