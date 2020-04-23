@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: me.yokeyword:fragmentationx-swipeback:1.0.2@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5d5b4f9538621ae11d6861e2f5869ae/jetified-fragmentationx-swipeback-1.0.2/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc349030a767f29d374e393ea9500559/jetified-fragmentationx-swipeback-1.0.2/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5d5b4f9538621ae11d6861e2f5869ae/jetified-fragmentationx-swipeback-1.0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5d5b4f9538621ae11d6861e2f5869ae/jetified-fragmentationx-swipeback-1.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc349030a767f29d374e393ea9500559/jetified-fragmentationx-swipeback-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc349030a767f29d374e393ea9500559/jetified-fragmentationx-swipeback-1.0.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.yokeyword/fragmentationx-swipeback/1.0.2/e05d475dd99536c526b8de5d5eeb8bb189bff40c/fragmentationx-swipeback-1.0.2-javadoc.jar!/" />

@@ -1,8 +1,13 @@
 package com.ybbbi.qqdemo;
 
 import android.app.ActivityManager;
+import android.app.AppOpsManager;
 import android.app.Application;
+import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Build;
+import android.provider.Settings;
 
 import com.hyphenate.EMContactListener;
 import com.hyphenate.EMMessageListener;
@@ -51,6 +56,7 @@ public class MyApp extends Application {
         EMClient.getInstance().setDebugMode(true);
 
         initgetMsg();
+        initBackGroundState();
 
         //初始化联系人数据库
         DbUtils.init(this);
@@ -95,6 +101,21 @@ public class MyApp extends Application {
 
             }
         });
+    }
+//判断是否处于后台状态
+    private void initBackGroundState() {
+
+    }
+
+    private boolean hasPermission() {
+        AppOpsManager appOps = (AppOpsManager)
+                getSystemService(Context.APP_OPS_SERVICE);
+        int mode = 0;
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT) {
+            mode = appOps.checkOpNoThrow(AppOpsManager.OPSTR_GET_USAGE_STATS,
+                    android.os.Process.myUid(), getPackageName());
+        }
+        return mode == AppOpsManager.MODE_ALLOWED;
     }
 
     private void initgetMsg() {

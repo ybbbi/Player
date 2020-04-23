@@ -26,10 +26,10 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int fragmentation_help = 0x7f070085;
-        public static final int fragmentation_ic_expandable = 0x7f070086;
-        public static final int fragmentation_ic_right = 0x7f070087;
-        public static final int fragmentation_ic_stack = 0x7f070088;
+        public static final int fragmentation_help = 0x7f07008c;
+        public static final int fragmentation_ic_expandable = 0x7f07008d;
+        public static final int fragmentation_ic_right = 0x7f07008e;
+        public static final int fragmentation_ic_stack = 0x7f07008f;
     }
     public static final class id {
         private id() {}

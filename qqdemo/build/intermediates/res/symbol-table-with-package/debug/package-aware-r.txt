@@ -872,6 +872,7 @@ color gunsmoke
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
+color main_bottom_tv_color
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1335,6 +1336,7 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
+drawable a
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -1425,6 +1427,7 @@ drawable addfriend_btn_normal
 drawable addfriend_btn_pressed
 drawable avd_hide_password
 drawable avd_show_password
+drawable b
 drawable bmob_update_btn_check_off_focused_holo_light
 drawable bmob_update_btn_check_off_holo_light
 drawable bmob_update_btn_check_off_pressed_holo_light
@@ -1454,13 +1457,18 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable c
+drawable circle_red
+drawable d
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable e
 drawable ease_show_head_toast_bg
+drawable f
 drawable fragmentation_help
 drawable fragmentation_ic_expandable
 drawable fragmentation_ic_right
@@ -1477,6 +1485,7 @@ drawable gpn
 drawable gpo
 drawable gpq
 drawable gpr
+drawable home_search_text_background
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
@@ -1490,6 +1499,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable item_kfc
 drawable left_back_normal
 drawable left_back_pres
 drawable list_item_selector
@@ -1534,6 +1544,9 @@ drawable send_msg_normal
 drawable shadow_bottom
 drawable shadow_left
 drawable shadow_right
+drawable shape_background_division
+drawable shape_background_solid
+drawable shape_background_stroke
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light

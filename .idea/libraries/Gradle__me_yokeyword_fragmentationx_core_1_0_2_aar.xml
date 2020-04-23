@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: me.yokeyword:fragmentationx-core:1.0.2@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16f22e0530087d9c9df1aba983dd51c4/jetified-fragmentationx-core-1.0.2/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/532c5eee12ff58f18bb6c61bf6d70fc6/jetified-fragmentationx-core-1.0.2/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16f22e0530087d9c9df1aba983dd51c4/jetified-fragmentationx-core-1.0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16f22e0530087d9c9df1aba983dd51c4/jetified-fragmentationx-core-1.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/532c5eee12ff58f18bb6c61bf6d70fc6/jetified-fragmentationx-core-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/532c5eee12ff58f18bb6c61bf6d70fc6/jetified-fragmentationx-core-1.0.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.yokeyword/fragmentationx-core/1.0.2/b44e1469adb09472d7adfe6011b53b3c985b9946/fragmentationx-core-1.0.2-javadoc.jar!/" />
